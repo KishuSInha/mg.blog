@@ -407,7 +407,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLogo = document.getElementById('dynamic-nav-logo');
     if (navLogo) {
         const quotes = [
-            "HBD MUSKAN",
             "You are my serendipity.",
             "A flower blooming in the snow.",
             "My beautiful destiny.",
