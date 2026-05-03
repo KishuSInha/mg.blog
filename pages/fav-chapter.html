@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Her Favourite Chapter | Muskan's Birthday</title>
+  <link rel="stylesheet" href="../src/dashboard.css">
+  <style>
+    .fav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.2rem;
+    }
+    .fav-item {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      aspect-ratio: 3/4;
+      cursor: pointer;
+      transition: transform 0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+    }
+    .fav-item:hover { transform: scale(1.04); z-index: 5; }
+    .fav-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      filter: brightness(0.75) saturate(0.8);
+      transition: filter 0.5s ease;
+    }
+    .fav-item:hover img { filter: brightness(1) saturate(1.1); }
+    .fav-item-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .fav-item:hover .fav-item-overlay { opacity: 1; }
+    .fav-item-overlay span {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    .intro-quote {
+      max-width: 700px;
+      margin: 0 auto 4rem;
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      font-style: italic;
+      color: rgba(240,230,228,0.6);
+      line-height: 1.8;
+    }
+    .intro-quote span { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <a href="../dashboard/index.html" class="back-btn">← Dashboard</a>
+
+  <div class="page-hero">
+    <p class="page-eyebrow">THE WORLD INSIDE HER</p>
+    <h1 class="page-title">Her <span>Favourite</span> Chapter</h1>
+    <div class="page-line"></div>
+  </div>
+
+  <div class="page-content">
+    <p class="intro-quote">
+      "Some people carry entire <span>universes</span> inside them.<br>
+      These are the ones she keeps close."
+    </p>
+    <div class="fav-grid">
+      <div class="fav-item"><img src="../her fav chapter/fav1.png" alt="fav"><div class="fav-item-overlay"><span>A story she loves</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav2.png" alt="fav"><div class="fav-item-overlay"><span>A world she visits</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav3.png" alt="fav"><div class="fav-item-overlay"><span>A feeling she keeps</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav4.png" alt="fav"><div class="fav-item-overlay"><span>A chapter she rereads</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav5.png" alt="fav"><div class="fav-item-overlay"><span>A dream she holds</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav6.png" alt="fav"><div class="fav-item-overlay"><span>A place she belongs</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav7.png" alt="fav"><div class="fav-item-overlay"><span>A song she hums</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav8.png" alt="fav"><div class="fav-item-overlay"><span>A scene she remembers</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav9.png" alt="fav"><div class="fav-item-overlay"><span>A light she follows</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav10.png" alt="fav"><div class="fav-item-overlay"><span>A warmth she carries</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav11.png" alt="fav"><div class="fav-item-overlay"><span>A moment in time</span></div></div>
+      <div class="fav-item"><img src="../her fav chapter/fav12.png" alt="fav"><div class="fav-item-overlay"><span>A colour she breathes</span></div></div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initSakura, initPageTransitions } from '../src/dashboard.js';
+    initSakura();
+    initPageTransitions();
+  </script>
+</body>
+</html>

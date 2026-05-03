@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muskan's World | Dashboard</title>
+  <link rel="stylesheet" href="../src/dashboard.css">
+</head>
+<body>
+
+  <section class="dash-hero">
+    <p class="dash-eyebrow">EST. 2004 &nbsp;·&nbsp; A CELEBRATION OF HER</p>
+    <h1 class="dash-title">MUSKAN'S <span>WORLD</span></h1>
+    <p class="dash-subtitle">Every chapter of a girl who became everything</p>
+
+    <div class="dash-divider"><span>꽃</span></div>
+
+    <div class="cards-grid">
+
+      <!-- Letters -->
+      <a href="../pages/letters.html" class="dash-card" style="--card-color:#e88b9b">
+        <div class="card-num">01</div>
+        <div class="card-icon">💌</div>
+        <h2 class="card-title">22 Letters<br>for 22 Years</h2>
+        <p class="card-desc">Twenty-two notes written across time — one for every year she's made this world more beautiful.</p>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <!-- Memories -->
+      <a href="../pages/memories.html" class="dash-card" style="--card-color:#c9a96e">
+        <div class="card-num">02</div>
+        <div class="card-icon">📸</div>
+        <h2 class="card-title">Moments<br>& Memories</h2>
+        <p class="card-desc">Every photograph is a stolen second of time. Here are hers — framed, forever.</p>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <!-- Fav Chapter -->
+      <a href="../pages/fav-chapter.html" class="dash-card" style="--card-color:#a78bde">
+        <div class="card-num">03</div>
+        <div class="card-icon">🎬</div>
+        <h2 class="card-title">Her Favourite<br>Chapter</h2>
+        <p class="card-desc">The stories she loves, the places she visits in her mind, the world she holds inside her.</p>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <!-- Wishes -->
+      <a href="../pages/wishes.html" class="dash-card" style="--card-color:#88d5c2">
+        <div class="card-num">04</div>
+        <div class="card-icon">✨</div>
+        <h2 class="card-title">Leave a<br>Wish</h2>
+        <p class="card-desc">Write something for her. Your words will stay here, forever woven into this day.</p>
+        <div class="card-arrow">→</div>
+      </a>
+
+      <!-- Home -->
+      <a href="../index.html" class="dash-card card-home" style="--card-color:#c9a96e">
+        <div class="card-icon">🏠</div>
+        <div>
+          <h2 class="card-title">Back to the Celebration</h2>
+          <p class="card-desc">Return to the main birthday experience</p>
+        </div>
+        <div class="card-arrow" style="margin:0">→</div>
+      </a>
+
+    </div>
+  </section>
+
+  <script type="module">
+    import { initSakura, initCardGlow, initPageTransitions } from '../src/dashboard.js';
+    initSakura();
+    initCardGlow();
+    initPageTransitions();
+  </script>
+</body>
+</html>

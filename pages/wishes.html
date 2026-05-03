@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave a Wish | Muskan's Birthday</title>
+  <link rel="stylesheet" href="../src/dashboard.css">
+</head>
+<body>
+
+  <a href="../dashboard/index.html" class="back-btn">← Dashboard</a>
+
+  <div class="page-hero">
+    <p class="page-eyebrow">WRITE SOMETHING FOR HER</p>
+    <h1 class="page-title">Leave a <span>Wish</span></h1>
+    <div class="page-line"></div>
+  </div>
+
+  <div class="page-content">
+    <div class="wish-form-wrap">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:#fff;margin-bottom:0.5rem;text-align:center;">Your words matter</h3>
+      <p style="color:rgba(240,230,228,0.4);font-size:0.82rem;letter-spacing:1.5px;text-align:center;margin-bottom:2rem;">They will stay here, forever woven into this day.</p>
+      <form class="wish-form" id="wish-form">
+        <input type="text" id="wish-name" placeholder="Your name..." maxlength="50">
+        <textarea id="wish-message" rows="5" placeholder="Write something beautiful for her..."></textarea>
+        <button type="submit" class="wish-submit">Send It With Love ✦</button>
+      </form>
+    </div>
+
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:#fff;text-align:center;margin-bottom:2.5rem;letter-spacing:3px;">
+      What They Said
+    </h2>
+
+    <div class="wishes-grid" id="wishes-grid">
+      <!-- Default wishes -->
+      <div class="wish-card">
+        <p>"May every year bring you closer to the version of yourself you've always dreamed of being."</p>
+        <span>— With love 🌸</span>
+      </div>
+      <div class="wish-card">
+        <p>"You are the kind of person stories are written about. Happy Birthday, Muskan."</p>
+        <span>— A friend 💌</span>
+      </div>
+      <div class="wish-card">
+        <p>"22 years of magic. The world is so much better with you in it."</p>
+        <span>— Always here ✨</span>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initSakura, initGuestbook, initPageTransitions } from '../src/dashboard.js';
+    initSakura();
+    initGuestbook();
+    initPageTransitions();
+  </script>
+</body>
+</html>
