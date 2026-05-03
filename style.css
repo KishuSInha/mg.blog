@@ -51,7 +51,7 @@ body {
 
 /* Gradient border via pseudo-element wrapper trick */
 .navbar-wrapper {
-    position: fixed;
+    position: absolute;
     top: 1.4rem;
     left: 50%;
     transform: translateX(-50%);
@@ -810,14 +810,17 @@ section {
 ═══════════════════════════════════════════ */
 @media (max-width: 900px) {
     .navbar-wrapper {
+        position: absolute; /* Stop it from following scroll */
         top: 0;
         left: 0;
         transform: none;
         width: 100%;
         border-radius: 0;
         padding: 0;
-        background: rgba(6,3,5,0.88);
-        box-shadow: 0 1px 0 rgba(232,139,155,0.12), 0 4px 20px rgba(0,0,0,0.4);
+        background: none; /* override linear-gradient */
+        background-color: rgba(6,3,5,0.95); /* pure dark color */
+        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        border-bottom: 1px solid rgba(232,139,155,0.15);
     }
 
     .navbar {
